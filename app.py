@@ -9,7 +9,9 @@ import numpy as np
 
 # 資料處理：7月份PM2.5的Scatter Plot，x軸為時間(每日的24小時)，y軸為濃度值
 
-df = pd.read_csv('D:/scatterplot/combine_select_point.csv', encoding='big5')
+url = 'https://raw.githubusercontent.com/farewellXD/scatterplot-factory/master/combine_select_point.csv'
+df = pd.read_csv(url, encoding='big5')
+
 
 df.TIME = pd.to_datetime(df.TIME)
 df['HOUR'] = df.TIME.dt.hour
@@ -54,4 +56,8 @@ def update_graph(value):
     return fig
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run_server(debug=False)
+=======
+    app.run_server()
+>>>>>>> 3e2f623321e0edb8cdb2098215643e8e7f4f5052
