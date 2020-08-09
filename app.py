@@ -56,8 +56,4 @@ def update_graph(value):
     return fig
 
 if __name__ == '__main__':
-<<<<<<< HEAD
     app.run_server(debug=False)
-=======
-    app.run_server()
->>>>>>> 3e2f623321e0edb8cdb2098215643e8e7f4f5052
